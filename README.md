@@ -1,13 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
 Things you may want to cover:
 
 * Ruby version
 
+Install updated ruby version
+
 * System dependencies
+Install rails using gem -> gem install rails
 
 * Configuration
 
@@ -15,10 +15,12 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
+* CRUD operations
 
-* Services (job queues, cache servers, search engines, etc.)
+* Authentication
+username : ali
+password : ali / admin
 
 * Deployment instructions
 
-* ...
+* For more details refer this doc https://guides.rubyonrails.org/getting_started.html
