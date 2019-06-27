@@ -1,0 +1,24 @@
+=form_with(model: @article, local: true) do |form|
+  -if @article.errors.any? 
+    #eror_explanation
+      %h4 
+        =pluralize(@article.errors.count,"error") 
+        prohibited this article from being saved:
+      %ul 
+        -@article.errors.full_messages.each do |msg|
+          %li=msg  
+  %p
+    = form.label "Enter your Name"
+    %br
+    = form.text_field :name
+ 
+  %p
+    = form.label "Enter your text here.."
+    %br
+    = form.text_area :text
+  %p
+    = form.submit 
+
+
+  
+

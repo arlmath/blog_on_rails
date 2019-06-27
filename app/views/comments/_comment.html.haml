@@ -1,0 +1,12 @@
+-if comment.commenter!=""
+  %p ------#{@@j+=1}-------->
+  %p
+    %strong Commenter:
+    =comment.commenter
+  %p
+    %strong Comment:
+    =comment.body
+  %p
+    =link_to 'Delete Comment',[comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' }

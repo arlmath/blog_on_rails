@@ -1,0 +1,18 @@
+%p 
+  %strong Name: 
+  = @article.name 
+%p 
+  %strong Text: 
+  = @article.text
+
+%h2 Comments
+-@@j=0
+-@article.comments.each do |comment|
+  =render comment
+=@article.comments.class
+%h4 Add a comment :
+=render 'comments/form'
+%a
+  =link_to 'Index', articles_path
+%h3
+  =link_to 'Edit', edit_article_path(@article)
